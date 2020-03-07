@@ -163,6 +163,14 @@ p {
   width: 100%;
   margin: 0 auto;
 }
+nav {
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  opacity: 90%;
+  margin-bottom: 40px;
+}
 nav h1 {
   background-color: #f4f3f4;
   text-align: center;
@@ -193,6 +201,14 @@ footer {
 @media (max-width: 500px) {
   footer {
     margin: 5px;
+  }
+}
+.home {
+  margin-top: 15%;
+}
+@media (max-width: 500px) {
+  .home {
+    margin-top: 27%;
   }
 }
 .home .intro img {
