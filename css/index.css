@@ -181,6 +181,11 @@ nav h1 {
   font-size: 50px;
   padding-top: 20px;
 }
+@media (max-width: 375px) {
+  nav h1 {
+    font-size: 40px;
+  }
+}
 nav ul {
   display: flex;
   justify-content: center;
@@ -191,6 +196,12 @@ nav ul {
 nav ul li {
   font-size: 16px;
   margin: 20px;
+}
+@media (max-width: 500px) {
+  nav ul li {
+    font-size: 14px;
+    margin: 10px;
+  }
 }
 footer {
   color: #22283b;
@@ -222,6 +233,11 @@ footer {
   .home .intro img {
     width: 100%;
     max-width: 100%;
+  }
+}
+@media (max-width: 375px) {
+  .home .intro img {
+    margin-top: 5%;
   }
 }
 .home .intro h2 {
@@ -345,7 +361,7 @@ footer {
 form {
   margin: 20px 20px 20px 20px;
 }
-h2 {
+h2.subscription-header {
   margin: 150px 20px 20px 20px;
 }
 .form-row {
