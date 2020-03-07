@@ -181,7 +181,7 @@ nav ul li {
   margin: 20px;
 }
 footer {
-  color: #22283B;
+  color: #22283b;
   background: #f4f4f4;
   padding: 20px 0;
   border: 1px double #e0e0e0;
@@ -189,6 +189,17 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+@media (max-width: 500px) {
+  footer {
+    margin: 5px;
+  }
+}
+@media (max-width: 500px) {
+  .home .intro img {
+    width: 100%;
+    max-width: 100%;
+  }
 }
 .home .intro h2 {
   padding: 15px;
@@ -241,6 +252,8 @@ footer {
 @media (max-width: 500px) {
   .home .walk {
     flex-direction: column;
+    align-items: center;
+    padding: 20px;
   }
 }
 .home .walk .walk-text {
@@ -275,8 +288,14 @@ footer {
   border: 1px solid #1a1e2c;
 }
 @media (max-width: 500px) {
-  .home .walk .walk-text {
-    width: 150px;
+  .home .walk .walk-text .btn {
+    width: 100%;
+    height: 60px;
+    margin: 0 auto;
+    padding: 0;
+    display: inline-block;
+    line-height: 60px;
+    text-align: center;
   }
 }
 .home .walk .walk-img {
