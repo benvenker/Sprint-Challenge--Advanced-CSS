@@ -18,6 +18,18 @@
 
     img {
       .img(28%, 20px, 2.5%, 20px, 100%);
+
+      @media @mobile {
+        .img(100%, 0, 2.5%, 20px, 100%);
+        margin: 20px;
+      }
+    }
+
+    @media @mobile {
+      img.launch,
+      img.sky {
+        display: none;
+      }
     }
   }
 
@@ -40,8 +52,17 @@
     display: flex;
     justify-content: center;
 
+    @media @mobile {
+      flex-direction: column;
+    }
+
     .walk-text {
       width: 50%;
+
+      @media @mobile {
+        order: 1;
+        width: 100%;
+      }
 
       h3 {
         margin-bottom: 10px;
@@ -59,12 +80,28 @@
         text-align: center;
         width: 100px;
         font-weight: 500px;
+        box-sizing: border-box;
+
+        &:hover {
+          color: rgb(26, 30, 44);
+          background-color: white;
+          border: 1px solid rgb(26, 30, 44);
+        }
+      }
+
+      @media @mobile {
+        width: 150px;
       }
     }
 
     .walk-img {
       width: 46%;
       margin-left: 4%;
+
+      @media @mobile {
+        .img(100%, 0, 2.5%, 20px, 100%);
+        margin: 20px;
+      }
 
       img {
         width: 100%;
