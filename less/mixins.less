@@ -1,7 +1,19 @@
 // Mixins Here
 .heading(@bg-color, @text-al, @font-size, @paddinng-top) {
   background-color: @bg-color;
-  text-align: @al-cont;
+  text-align: @text-al;
   font-size: @font-size;
   padding-top: @paddinng-top;
+}
+
+.img(@width, @margin-px, @margin-percent, @br, @height) {
+  width: @width;
+  margin: @margin-px @margin-percent;
+  border-radius: @br;
+  height: @height;
+}
+
+.btn(@bc, @br) {
+  background-color: @bc;
+  border-radius: @br;
 }
