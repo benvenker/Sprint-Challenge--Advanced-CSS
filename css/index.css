@@ -171,6 +171,10 @@ nav {
   opacity: 90%;
   margin-bottom: 40px;
 }
+nav a {
+  text-decoration: none;
+  color: inherit;
+}
 nav h1 {
   background-color: #f4f3f4;
   text-align: center;
@@ -302,6 +306,7 @@ footer {
   width: 100px;
   font-weight: 500px;
   box-sizing: border-box;
+  text-decoration: none;
 }
 .home .walk .walk-text .btn:hover {
   color: #1a1e2c;
@@ -336,4 +341,56 @@ footer {
   width: 100%;
   height: auto;
   border-radius: 10px;
+}
+form {
+  margin: 20px 20px 20px 20px;
+}
+h2 {
+  margin: 150px 20px 20px 20px;
+}
+.form-row {
+  margin: 10px 0;
+}
+label {
+  font-size: 18px;
+  padding: 10px;
+}
+input[type="text"],
+input[type="email"] {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+input[type="submit"] {
+  background-color: #1a1e2c;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 30px 0;
+  font-size: 18px;
+}
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6%;
+}
+row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+@media (max-width: 500px) {
+  .col-25,
+  .col-75,
+  input[type="submit"] {
+    width: 100%;
+  }
 }

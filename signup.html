@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>SpaceWalkers - Signup</title>
+    <link href="css/index.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Russo+One|Ubuntu"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav>
+      <h1>Space Walkers</h1>
+      <ul>
+        <li><a href="./index.html">Home</a></li>
+        <li>About Us</li>
+        <li>Blog</li>
+        <li>Contact</li>
+        <li>Sign In</li>
+      </ul>
+    </nav>
+    <h2>Subscribe to Our Magazine!</h2>
+    <div class="container">
+      <form action="">
+        <div class="row">
+          <div class="col-25">
+            <label for="first-name">First Name</label>
+          </div>
+          <div class="col-75">
+            <input
+              type="text"
+              id="first-name"
+              name="first-name"
+              placeholder="your name..."
+            />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="last-name">Last Name</label>
+          </div>
+          <div class="col-75">
+            <input
+              type="text"
+              id="last-name"
+              name="last-name"
+              placeholder="Your last name..."
+            />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="email">Email</label>
+          </div>
+          <div class="col-75">
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Your email address..."
+            />
+          </div>
+        </div>
+        <div class="row">
+          <input type="submit" value="Submit" />
+        </div>
+      </form>
+    </div>
+  </body>
+  <script>
+    const submitButton = document.querySelector("input[type=submit]");
+    console.log(submitButton);
+    submitButton.addEventListener("click", () => {
+      alert("Thank you, you're subscribed!");
+    });
+  </script>
+</html>
